@@ -1,10 +1,17 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
-class NewComponent extends Component {
+class Button extends Component {
   render() {
     return (
-      <div>Hello!</div>
+      <button onClick={this.props.onClick}>{this.props.children}</button>
     )
   }
 }
-export default NewComponent
+
+Button.propTypes = {
+  onClick: PropTypes.func.isRequired,
+  children: PropTypes.element
+}
+
+export default Button

@@ -1,10 +1,19 @@
 {
   "extends": "eslint-config-airbnb",
+  "plugins": ["jest"],
+  "env": {
+    "jest": true
+  },
   "rules": {
     "semi": [
       1,
       "never"
     ],
+    "jest/no-disabled-tests": "warn",
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "error",
+    "jest/prefer-to-have-length": "warn",
+    "jest/valid-expect": "error",
     "class-methods-use-this": "off",
     "react/prefer-stateless-function": "off",
     "curly": "off",

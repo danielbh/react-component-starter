@@ -1,7 +1,7 @@
 # react-component-starter
 **Includes:**
 
-- Storybook
-- CI
-- testing
+- React Storybook
+- testing and code coverage via Jest
+- circle CI config
 - eslint
